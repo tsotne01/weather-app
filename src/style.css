@@ -195,3 +195,9 @@ aside > h2{
     background: #47556941;
 }
 
+.main-container {
+    display: flex;
+    gap: 24px;
+    width: 100%;
+    margin: 0 auto;
+}
