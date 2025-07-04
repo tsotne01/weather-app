@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vite App</title>
+  <title>Weather App</title>
 </head>
 
 <body>
@@ -13,7 +13,7 @@
     <div class="header-title">
       <h1>Weather App</h1>
       <button class="theme-button" type="button">
-        <i  data-lucide="moon"></i>
+        <i data-lucide="moon"></i>
       </button>
     </div>
     <div class="header-search">
@@ -26,10 +26,59 @@
 
     </div>
   </header>
-  <main>
+  <main class="main-container">
 
-    <section></section>
-    <aside></aside>
+    <section class="weather-container">
+      <div class="weather-card">
+        <div class="weather-card-header">
+          <i data-lucide="map-pin"></i>
+          <h2 class="city-name">City Name</h2>
+        </div>
+        <p class="date">Date</p>
+      </div>
+      <div>
+
+      </div>
+    </section>
+    <aside>
+      <h2>Weather Details</h2>
+      <div>
+        <div class="weather-detail">
+          <img src="./src/assets/humidity.png" alt="humidity icon">
+          <h3>Humidity</h3>
+        </div>
+        <div>
+          <span class="humidity">
+            65%
+          </span>
+          <span class="humidity-status green">Normal</span>
+        </div>
+      </div>
+      <div>
+        <div class="weather-detail">
+          <img src="./src/assets/wind-speed.png" alt="humidity icon">
+          <h3>Wind Speed</h3>
+        </div>
+        <div>
+          <span class="humidity">
+            65%
+          </span>
+          <span class="humidity-status yellow">Normal</span>
+        </div>
+      </div>
+      <div>
+        <div class="weather-detail">
+          <img src="./src/assets/pressure.png" alt="humidity icon">
+          <h3>Pressure</h3>
+        </div>
+        <div>
+          <span class="humidity">
+            65%
+          </span>
+          <span class="humidity-status green">Normal</span>
+        </div>
+      </div>
+    </aside>
   </main>
   <footer></footer>
   <script defer type="module" src="/src/main.js"></script>
