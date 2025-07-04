@@ -32,9 +32,17 @@
       <div class="weather-card">
         <div class="weather-card-header">
           <i data-lucide="map-pin"></i>
-          <h2 class="city-name">City Name</h2>
+          <h2 class="city-name">Batumi</h2>
         </div>
-        <p class="date">Date</p>
+        <div>
+          <h3 class="temperature">22 </h3>
+          <span class="feels-like">
+            <span>°C</span>
+            <span><i data-lucide="thermometer"></i>
+              Feels like 24°</span>
+          </span>
+        </div>
+        <span class="weather-status">Cloudy</span>
       </div>
       <div>
 
@@ -79,6 +87,32 @@
         </div>
       </div>
     </aside>
+    <div class="forecast-container">
+      <div class="header">
+        <h1>7-Day Forecast</h1>
+        <button class="weekly-overview-btn">Weekly Overview</button>
+      </div>
+      <div class="forecast-list">
+        <div class="forecast-item today">
+          <span class="day">Today</span>
+          <div class="weather-icon"><img src="./src/assets/cloud.png" alt="Cloudy"></div>
+          <span class="description">Cloudy</span>
+          <div class="temperatures">
+            <span class="high-temp">22°</span>
+            <span class="low-temp">18°</span>
+          </div>
+        </div>
+        <div class="forecast-item">
+          <span class="day">Tomorrow</span>
+          <div class="weather-icon"><img src="./src/assets/sunny.png" alt="Sunny"></div>
+          <span class="description">Sunny</span>
+          <div class="temperatures">
+            <span class="high-temp red-trend">25°</span>
+            <span class="low-temp">20°</span>
+          </div>
+        </div>
+      </div>
+    </div>
   </main>
   <footer></footer>
   <script defer type="module" src="/src/main.js"></script>
