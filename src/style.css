@@ -329,15 +329,19 @@ aside>h2 {
 
 
 .forecast-item .weather-icon {
-    flex: 0 0 40px;
+    flex: 0 0 48px;
     text-align: center;
     margin-right: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .forecast-item .weather-icon img {
-    width: 30px;
-    height: 30px;
-    vertical-align: middle;
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    display: block;
 }
 
 .forecast-item .description {
